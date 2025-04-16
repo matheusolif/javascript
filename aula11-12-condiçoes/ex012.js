@@ -1,5 +1,5 @@
 const agora = new Date()
-let hora= agora.getHours
+let hora= agora.getHours ()
 console.log (`Agora são ${hora} horas`)
 
 
@@ -10,5 +10,5 @@ if (hora > 0 && hora < 6) {
 } else if (hora <=18) {
     console.log ('Boa tarde')
 } else {
-    console.log('Boa noite')
+    console.log('Boa noite :)')
 }
