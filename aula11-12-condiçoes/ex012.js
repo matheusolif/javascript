@@ -1,4 +1,4 @@
-const agora = new Date()
+const agora = new Date() //sempre Date mesmo se for dia, hora, mês...
 let hora= agora.getHours ()
 console.log (`Agora são ${hora} horas`)
 
