@@ -1,6 +1,8 @@
 let agora = new Date()
 let diaSemana = agora.getDay()
 
+
+
 //No JS os dias da semana são contados assim:
 
 /*
@@ -37,5 +39,5 @@ switch (diaSemana) {
         console.log('Sábado')
         break
     default: 
-        console.log('Salvando...')
+        console.log('[ERRO] Dia inválido!')
 }       
