@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        body {
+            background-color: blue;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando Estudos de DOM</h1>
+    <p >Aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em Java Script</p>
+    <div id="click"  name="resultado">Clique aqui</div>
+
+    <script>
+        let paragrafo1=window.document.getElementsByTagName('p')[1]
+        window.document.write(paragrafo1.innerHTML) //vem com a formatação HTML, diferente do innerText que vem somente texto
+
+        /*let div=window.document.getElementById('click')
+        div.style.background='yellow'
+        div.style.color='black'*/
+
+        /*let res=window.document.getElementsByName('resultado')[0]
+        res.style.background='green'*/
+
+        /*window.document.getElementsByClassName*/
+
+        let id = window.document.querySelector('div#click')
+        id.style.background='red'
+    </script>
+</body>
+</html>
