@@ -12,3 +12,4 @@ if (hora > 0 && hora < 6) {
 } else {
     console.log('Boa noite :)')
 }
+
