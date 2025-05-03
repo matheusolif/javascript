@@ -7,25 +7,26 @@
 </head>
 <body>
     <h1>Somando Valores</h1>
-    <input type="number" name="n1" id="idn1">
-    <input type="number" name="n2" id="idn2">
-    <input type="button" value="somar" onclick="somar()">
-    <div id="resultado">Resultado</div>
-
-    <script>
-        function somar(){
-            let numero1 = window.document.getElementById('idn1')
-
-            let numero2 = window.document.querySelector('#idn2')
-            
-            let n1 = Number(numero1.value)
-            let n2 = Number (numero2.value)
-
-            let soma = n1 + n2
-
-            let res = window.document.getElementById('resultado')
-            resultado.innerHTML = `A soma de ${n1} mais ${n2} é igual a ${soma}`
+    <form>
+        <label for="idn1">Valor 1:</label>
+        <input type="number" id="idn1">
+      
+        <label for="idn2">Valor 2:</label>
+        <input type="number" id="idn2">
+      
+        <button type="button" onclick="somar()">Somar</button>
+      </form>
+      
+      <div id="resultado">Resultado</div>
+      
+      <script>
+        function somar() {
+          const n1 = Number(document.getElementById('idn1').value);
+          const n2 = Number(document.getElementById('idn2').value);
+          const soma = n1 + n2;
+      
+          document.getElementById('resultado').innerHTML = `A soma de ${n1} mais ${n2} é igual a ${soma}`;
         }
-    </script>
+      </script>
 </body>
 </html>
