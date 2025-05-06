@@ -18,6 +18,10 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
+div {
+    padding: 0.5rem;
+}
+
 
 footer {
     color: white;
