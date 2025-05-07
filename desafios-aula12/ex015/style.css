@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(58, 104, 241);
+    font: normal 1rem Arial, Helvetica, sans-serif;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+form {
+    padding: 1rem;
+    text-align: left;
+}
+
+div.genero {
+    width: 400px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
