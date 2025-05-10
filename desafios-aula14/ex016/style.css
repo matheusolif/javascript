@@ -21,14 +21,15 @@ section {
 form {
     padding: 1rem;
     text-align: left;
-    gap: 1rem;
 }
 
 
-div.genero {
-    width: 400px;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+div.fim {
+   padding: 1rem 0 1rem 0;
+}
+
+div.passo {
+    padding: 0rem 0 1rem 0;
 }
 
 footer {
