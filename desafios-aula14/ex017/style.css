@@ -18,6 +18,18 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
+form {
+    text-align: left;
+    padding: 1rem;
+}
+
+
+
+div.campo {
+    
+    color: black;
+    padding:  1rem 0;
+}
 
 footer {
     color: white;

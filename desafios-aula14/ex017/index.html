@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Título</h1>
+    </header>
+    <section>
+       <form action="#">
+
+        <div class="input">
+            <label for="idnumero">Número:</label>
+            <input type="number" name="numero" id="idnumero" >
+            <button type="button" onclick="tabuada()">Gerar Tabuada</button>
+        </div>
+
+        <div class="campo">
+            <select name="select" id="idselect"></select>
+        </div>
+       </form>
+       
+    </section>
+    <footer>
+        <p>&copy; JS CursoemVideo 2025</p>
+    </footer>
+
+    <script >
+        function tabuada() {
+            let txtnumero = document.getElementById('idnumero')
+            let select = document.getElementById('idselect')
+
+            if (txtnumero.value.length == 0) {
+                alert("Por favor, digite um número!")
+                return
+            }
+
+            let numero = Number(txtnumero.value)
+            select.innerHTML = '' // limpa a lista
+
+            for (let i = 1; i <= 10; i++) {
+                let item = document.createElement('option')
+                item.text = `${numero} x ${i} = ${numero * i}`
+                item.value = `tab${i}` // valor único para cada opção
+                select.appendChild(item)
+            }
+        }
+    </script>
+</body>
+</html>
