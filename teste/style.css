@@ -23,19 +23,14 @@ form {
     padding: 1rem;
 }
 
-#campo {
-    display: flex;
-    gap: 2rem;
-}
+
 
 div.campo {
+    
     color: black;
     padding:  1rem 0;
 }
 
-select {
-    background-color: rgb(173, 202, 245);
-}
 footer {
     color: white;
     text-align: center;

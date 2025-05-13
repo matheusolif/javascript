@@ -19,18 +19,17 @@
             <button type="button" onclick="tabuada()">Gerar Tabuada</button>
         </div>
 
-        <div id="campo">
-            <div class="campo">
-                <select name="select" id="idselect" size="10">
-                    <option>Insira um número acima</option>
-                </select>
+        <div class="campo">
+            <select name="select" id="idselect" size="10">
+                <option>Insira um número acima</option>
+            </select>
             
-            </div>
-            <div class="campo">
-                <select name="select" id="idselect2" size="10">
-                    <option >Insira um número acima</option>
-                </select>
-            </div>
+        </div>
+
+        <div>
+            <select name="select" id="idselect2" size="20">
+                <option>Insira um número acima</option>
+            </select>
         </div>
        </form>
        
@@ -42,7 +41,7 @@
     <script >
         function tabuada() {
             let txtnumero = document.getElementById('idnumero')
-            let multiplicar = document.getElementById('idselect')
+            let multiplicaco = document.getElementById('idselect')
             let divisao = document.getElementById('idselect2')
 
             if (txtnumero.value.length == 0) {
@@ -50,20 +49,21 @@
                 
             }else {
                 let numero = Number(txtnumero.value)
-                multiplicar.innerHTML = '' // limpa a lista
-                divisao.innerHTML = ''
+                multiplicaco.innerHTML = '' // limpa a lista
+                divisao.innerHTML = ' '
+
             for (let contador = 1; contador <= 10; contador++) {
-                let item = document.createElement('option') //criei um elemento, tag option 
+                let item = document.createElement('option') //criei um itm, tag option 
                 item.text = `${numero} x ${contador} = ${numero * contador}`
                 item.value = `tab${contador}` // importante para outros tipos de linguagem, para saber qual item foi selecionado. É valor único para cada opção
-                multiplicar.appendChild(item)
+                multiplicaco.appendChild(item)
 
                 let item2 = document.createElement('option')
-                item2.text = `${numero} / ${contador} = ${(numero / contador).toFixed(2)}`
+                item2.text = `${numero} / ${contador} = ${(numero / contador).toFixed(2)}` //toFixed colocar duas casas decimais
                 divisao.appendChild(item2)
+                
             }
-            }
-            
+            } 
         }
     </script>
 </body>
