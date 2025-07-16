@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio aula 16</title>
+    <style>
+
+        body {
+            background-color: blue;
+            
+        }
+        header {
+            color: white;
+            text-align: center;
+        }
+
+        section {
+            background-color: white;
+            width: 500px;
+            padding: 1rem;
+            border-radius:1rem;
+            margin: auto;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+            
+            
+            
+        }
+        #idnumero {
+            margin-bottom: 0.75rem;
+        }
+        #idlista {
+            width: 10rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Analisado de Números</h1>
+    </header>
+
+    <section>
+        <div class="div1">
+            <label for="idnumero">Número (entre 1 e 100): </label>
+            <input type="number" name="numero" id="idnumero">
+            <button type="button" value="adicionar">Adicionar</button>
+            <br><select name="lista" id="idlista" size="6"></select>
+            <br><button type="button" value="finalizar">Finalizar</button>
+        </div>
+        <div id="res">
+
+        </div>
+    </section>
+</body>
+</html>
