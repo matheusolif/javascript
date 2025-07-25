@@ -8,7 +8,7 @@ function parimp (n) {
 
 //console.log (parimp(233))
 
-//a não tem valor predefinido, B tem 
+//A não tem valor predefinido, B tem 
 function soma (a, b = 0) {
     return a + b
 }
