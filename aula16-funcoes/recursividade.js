@@ -5,7 +5,7 @@ function fatorial (numero){
         return 1
 
     }else {
-        return numero * (numero-1) //chamada dentro da própria função
+        return numero * fatorial(numero-1) //chamada dentro da própria função
     }
 }
 
